@@ -1,91 +1,75 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.1">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
-    span.s1 {font-kerning: none}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">// CONFIG</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">savedNotesList.appendChild(li);</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">saveNoteBtn.addEventListener('click', () =&gt; {</span></p>
-<p class="p1"><span class="s1">const text = notesArea.value.trim();</span></p>
-<p class="p1"><span class="s1">if(!text) return alert('Write something sweet 💕');</span></p>
-<p class="p1"><span class="s1">const notes = JSON.parse(localStorage.getItem('love_notes') || '[]');</span></p>
-<p class="p1"><span class="s1">notes.unshift(text);</span></p>
-<p class="p1"><span class="s1">localStorage.setItem('love_notes', JSON.stringify(notes));</span></p>
-<p class="p1"><span class="s1">notesArea.value = '';</span></p>
-<p class="p1"><span class="s1">loadNotes();</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">clearNotesBtn.addEventListener('click', () =&gt; {</span></p>
-<p class="p1"><span class="s1">if(confirm('Clear all saved notes?')){</span></p>
-<p class="p1"><span class="s1">localStorage.removeItem('love_notes');</span></p>
-<p class="p1"><span class="s1">loadNotes();</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">savedNotesList.addEventListener('click', (e) =&gt; {</span></p>
-<p class="p1"><span class="s1">if(e.target.classList.contains('remove')){</span></p>
-<p class="p1"><span class="s1">const i = Number(e.target.dataset.i);</span></p>
-<p class="p1"><span class="s1">const notes = JSON.parse(localStorage.getItem('love_notes') || '[]');</span></p>
-<p class="p1"><span class="s1">notes.splice(i,1);</span></p>
-<p class="p1"><span class="s1">localStorage.setItem('love_notes', JSON.stringify(notes));</span></p>
-<p class="p1"><span class="s1">loadNotes();</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">// Music player</span></p>
-<p class="p1"><span class="s1">playButtons.forEach(btn =&gt; {</span></p>
-<p class="p1"><span class="s1">btn.addEventListener('click', () =&gt; {</span></p>
-<p class="p1"><span class="s1">const src = btn.closest('.song').dataset.src;</span></p>
-<p class="p1"><span class="s1">player.src = src;</span></p>
-<p class="p1"><span class="s1">player.play();</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">// Gallery (store images in localStorage as data URLs)</span></p>
-<p class="p1"><span class="s1">function renderGallery(){</span></p>
-<p class="p1"><span class="s1">const imgs = JSON.parse(localStorage.getItem('love_images') || '[]');</span></p>
-<p class="p1"><span class="s1">thumbnails.innerHTML = '';</span></p>
-<p class="p1"><span class="s1">imgs.forEach(d =&gt; {</span></p>
-<p class="p1"><span class="s1">const img = document.createElement('img');</span></p>
-<p class="p1"><span class="s1">img.src = d;</span></p>
-<p class="p1"><span class="s1">thumbnails.appendChild(img);</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">imgUpload.addEventListener('change', (e) =&gt; {</span></p>
-<p class="p1"><span class="s1">const files = Array.from(e.target.files);</span></p>
-<p class="p1"><span class="s1">files.forEach(file =&gt; {</span></p>
-<p class="p1"><span class="s1">const reader = new FileReader();</span></p>
-<p class="p1"><span class="s1">reader.onload = function(evt){</span></p>
-<p class="p1"><span class="s1">const data = evt.target.result;</span></p>
-<p class="p1"><span class="s1">const imgs = JSON.parse(localStorage.getItem('love_images') || '[]');</span></p>
-<p class="p1"><span class="s1">imgs.unshift(data);</span></p>
-<p class="p1"><span class="s1">localStorage.setItem('love_images', JSON.stringify(imgs));</span></p>
-<p class="p1"><span class="s1">renderGallery();</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">reader.readAsDataURL(file);</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">// Init</span></p>
-<p class="p1"><span class="s1">loadNotes();</span></p>
-<p class="p1"><span class="s1">renderGallery();</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">// If there are images in /images folder referenced directly, show placeholders (you can add images manually)</span></p>
-<p class="p1"><span class="s1">// (No server-side upload:</span></p>
-</body>
-</html>
+// CONFIG
+const text = notesArea.value.trim();
+if(!text) return alert('Write something sweet 💕');
+const notes = JSON.parse(localStorage.getItem('love_notes') || '[]');
+notes.unshift(text);
+localStorage.setItem('love_notes', JSON.stringify(notes));
+notesArea.value = '';
+loadNotes();
+});
+
+
+clearNotesBtn.addEventListener('click', () => {
+if(confirm('Clear all saved notes?')){
+localStorage.removeItem('love_notes');
+loadNotes();
+}
+});
+
+
+savedNotesList.addEventListener('click', (e) => {
+if(e.target.classList.contains('remove')){
+const i = Number(e.target.dataset.i);
+const notes = JSON.parse(localStorage.getItem('love_notes') || '[]');
+notes.splice(i,1);
+localStorage.setItem('love_notes', JSON.stringify(notes));
+loadNotes();
+}
+});
+
+
+// Music player
+playButtons.forEach(btn => {
+btn.addEventListener('click', () => {
+const src = btn.closest('.song').dataset.src;
+player.src = src;
+player.play();
+});
+});
+
+
+// Gallery (store images in localStorage as data URLs)
+function renderGallery(){
+const imgs = JSON.parse(localStorage.getItem('love_images') || '[]');
+thumbnails.innerHTML = '';
+imgs.forEach(d => {
+const img = document.createElement('img');
+img.src = d;
+thumbnails.appendChild(img);
+});
+}
+
+
+imgUpload.addEventListener('change', (e) => {
+const files = Array.from(e.target.files);
+files.forEach(file => {
+const reader = new FileReader();
+reader.onload = function(evt){
+const data = evt.target.result;
+const imgs = JSON.parse(localStorage.getItem('love_images') || '[]');
+imgs.unshift(data);
+localStorage.setItem('love_images', JSON.stringify(imgs));
+renderGallery();
+}
+reader.readAsDataURL(file);
+});
+});
+
+
+// Init
+loadNotes();
+renderGallery();
+
+
+// If there are images in /images folder referenced directly, show placeholders (you can add images manually)
+// (No server-side upload:
