@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.1">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;For My Love 💖&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>* {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Poppins', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #ffe6f0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #5a0033;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow-x: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>h1, h2 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Secret Screen */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>#lock-screen {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #ffd6e8;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: opacity 0.8s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>#lock-screen h1 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>#codeInput {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px 15px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 2px solid #ff99cc;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>#enterBtn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #ff99cc;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>#enterBtn:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #ff80b0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Main Content */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>#main-content {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>animation: fadeIn 1s ease forwards;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>header {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #ffb6d9;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 15px 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 3px solid #ff99cc;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>header button {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 2px solid #ff99cc;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 8px 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>header button:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #ffccdd;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>section {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #fff0f6;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 700px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 0 15px rgba(255, 160, 200, 0.4);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.active {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes fadeIn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>from { opacity: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>to { opacity: 1; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>footer {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #aa3366;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Secret Code Page --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="lock-screen"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;💖 Enter Our Secret Code 💖&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;input type="password" id="codeInput" placeholder="Enter code..." /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button id="enterBtn"&gt;Enter&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Main Website --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="main-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Welcome my love 💞&lt;br&gt;Enjoy your stay&lt;/h1&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button onclick="showSection('letter')"&gt;💌 Love Letter&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button onclick="showSection('music')"&gt;🎵 Music&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button onclick="showSection('notes')"&gt;📝 Notes&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button onclick="showSection('gallery')"&gt;🌷 Gallery&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="letter" class="active"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;My Love Letter for You 💖&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>My dearest,&lt;br&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>From the moment we met, my world has been brighter. This website is a little space just for us — to hold memories, songs, and notes that remind me of you. 💕&lt;br&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Yours always,&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>— Me 💌</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="music"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Songs That Remind Me of You 🎶&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;ul style="list-style:none; margin-top:15px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;💗 &lt;b&gt;Hiwaga&lt;/b&gt; — Tatin DC&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;💗 &lt;b&gt;Wish&lt;/b&gt; — 16&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="notes"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Sweet Little Notes 📝&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;🌸 You are my favorite person.&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>🌸 Every day with you feels special.&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>🌸 You make my world softer and warmer. 💕&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="gallery"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Our Memories 📸&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;Add your favorite pictures here! (You can drag them into this section later 💖)&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="https://via.placeholder.com/300x200/ffcce0/ffffff?text=Your+Photo+Here" style="border-radius:15px; margin-top:15px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;Made with 💖 by You&lt;/footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const enterBtn = document.getElementById("enterBtn");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const codeInput = document.getElementById("codeInput");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const lockScreen = document.getElementById("lock-screen");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const mainContent = document.getElementById("main-content");</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>enterBtn.addEventListener("click", () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (codeInput.value === "231021") {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>lockScreen.style.opacity = "0";</p>
+<p class="p1"><span class="Apple-converted-space">        </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>lockScreen.style.display = "none";</p>
+<p class="p1"><span class="Apple-converted-space">          </span>mainContent.style.display = "flex";</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}, 800);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>alert("Wrong code, my love 😅 try again!");</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function showSection(sectionId) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.querySelectorAll("section").forEach(sec =&gt; sec.classList.remove("active"));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById(sectionId).classList.add("active");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
