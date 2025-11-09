@@ -1,66 +1,59 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.1">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
-    span.s1 {font-kerning: none}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">:root{</span></p>
-<p class="p1"><span class="s1">--bg: #fff0f6;</span></p>
-<p class="p1"><span class="s1">--soft-pink: #ffd6ea;</span></p>
-<p class="p1"><span class="s1">--accent: #ff7aa2;</span></p>
-<p class="p1"><span class="s1">--text: #5a0033;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">*{box-sizing:border-box}</span></p>
-<p class="p1"><span class="s1">html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}</span></p>
-<p class="p1"><span class="s1">body{background:linear-gradient(180deg,var(--soft-pink),#fff7fb);color:var(--text);display:flex;align-items:center;justify-content:center;padding:30px}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.center-screen{min-height:100vh;display:flex;align-items:center;justify-content:center;width:100%}</span></p>
-<p class="p1"><span class="s1">.lock-card{background:#fff;border-radius:16px;padding:28px 24px;max-width:420px;width:92%;text-align:center;box-shadow:0 8px 30px rgba(90,0,51,0.08);border:1px solid rgba(255,122,162,0.15)}</span></p>
-<p class="p1"><span class="s1">.lock-card h1{margin-bottom:12px;font-size:20px}</span></p>
-<p class="p1"><span class="s1">.lock-card input{width:100%;padding:10px 12px;border-radius:12px;border:2px solid #ffd6ea;font-size:16px;margin-top:8px}</span></p>
-<p class="p1"><span class="s1">.lock-actions{display:flex;gap:10px;justify-content:center;margin-top:12px}</span></p>
-<p class="p1"><span class="s1">button{cursor:pointer;padding:8px 14px;border-radius:12px;border:none;background:var(--accent);color:white;font-weight:600}</span></p>
-<p class="p1"><span class="s1">button.muted{background:transparent;color:var(--text);border:1px solid rgba(90,0,51,0.06)}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.hidden{display:none}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">/* Header */</span></p>
-<p class="p1"><span class="s1">header{width:100%;max-width:980px;margin-bottom:18px}</span></p>
-<p class="p1"><span class="s1">header h1{font-size:28px;margin:8px 0}</span></p>
-<p class="p1"><span class="s1">.subtitle{color:#7a2f58;margin-top:-6px}</span></p>
-<p class="p1"><span class="s1">nav{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:12px}</span></p>
-<p class="p1"><span class="s1">.nav-btn{background:#fff;border:2px solid rgba(255,122,162,0.25);padding:8px 16px;border-radius:24px}</span></p>
-<p class="p1"><span class="s1">.nav-btn.active{background:linear-gradient(90deg,#fff,#ffe6f3);box-shadow:0 6px 18px rgba(255,122,162,0.08)}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">main{width:100%;max-width:980px}</span></p>
-<p class="p1"><span class="s1">.panel{display:none}</span></p>
-<p class="p1"><span class="s1">.panel.active{display:block}</span></p>
-<p class="p1"><span class="s1">.card{background:linear-gradient(180deg,#fff,#fff7fb);padding:18px;border-radius:14px;border:1px solid rgba(255,122,162,0.12);box-shadow:0 8px 30px rgba(255,122,162,0.06)}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.music-list .song{display:flex;justify-content:space-between;align-items:center;padding:10px;border-radius:10px;margin:8px 0;border:1px solid rgba(255,122,162,0.06)}</span></p>
-<p class="p1"><span class="s1">.play-btn{background:transparent;border:1px solid rgba(90,0,51,0.08);color:var(--text);padding:6px 10px;border-radius:8px}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">textarea{width:100%;border-radius:10px;padding:10px;border:1px solid rgba(90,0,51,0.06);resize:vertical}</span></p>
-<p class="p1"><span class="s1">.notes-actions{display:flex;gap:8px;margin-top:8px}</span></p>
-<p class="p1"><span class="s1">#savedNotes{list-style:none;padding-left:0}</span></p>
-<p class="p1"><span class="s1">#savedNotes li{background:#fff;padding:8px;border-radius:8px;margin-top:8px;border:1px solid rgba(255,122,162,0.06)}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">.gallery-area input{margin-top:8px}</span></p>
-<p class="p1"><span class="s1">.thumb-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-top:12px}</span></p>
-<p class="p1"><span class="s1">.thumb-grid img{width:100%;height:100%;object-fit:cover;border-radius:10px;border:1px solid rgba(255,122,162,0.06)}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">footer{margin-top:18px;color:#7a2f58;text-align:center}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">@media(max-width:640px){header h1{font-size:20px}}</span></p>
-</body>
-</html>
+:root{
+--bg: #fff0f6;
+--soft-pink: #ffd6ea;
+--accent: #ff7aa2;
+--text: #5a0033;
+}
+
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+body{background:linear-gradient(180deg,var(--soft-pink),#fff7fb);color:var(--text);display:flex;align-items:center;justify-content:center;padding:30px}
+
+
+.center-screen{min-height:100vh;display:flex;align-items:center;justify-content:center;width:100%}
+.lock-card{background:#fff;border-radius:16px;padding:28px 24px;max-width:420px;width:92%;text-align:center;box-shadow:0 8px 30px rgba(90,0,51,0.08);border:1px solid rgba(255,122,162,0.15)}
+.lock-card h1{margin-bottom:12px;font-size:20px}
+.lock-card input{width:100%;padding:10px 12px;border-radius:12px;border:2px solid #ffd6ea;font-size:16px;margin-top:8px}
+.lock-actions{display:flex;gap:10px;justify-content:center;margin-top:12px}
+button{cursor:pointer;padding:8px 14px;border-radius:12px;border:none;background:var(--accent);color:white;font-weight:600}
+button.muted{background:transparent;color:var(--text);border:1px solid rgba(90,0,51,0.06)}
+
+
+.hidden{display:none}
+
+
+/* Header */
+header{width:100%;max-width:980px;margin-bottom:18px}
+header h1{font-size:28px;margin:8px 0}
+.subtitle{color:#7a2f58;margin-top:-6px}
+nav{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:12px}
+.nav-btn{background:#fff;border:2px solid rgba(255,122,162,0.25);padding:8px 16px;border-radius:24px}
+.nav-btn.active{background:linear-gradient(90deg,#fff,#ffe6f3);box-shadow:0 6px 18px rgba(255,122,162,0.08)}
+
+
+main{width:100%;max-width:980px}
+.panel{display:none}
+.panel.active{display:block}
+.card{background:linear-gradient(180deg,#fff,#fff7fb);padding:18px;border-radius:14px;border:1px solid rgba(255,122,162,0.12);box-shadow:0 8px 30px rgba(255,122,162,0.06)}
+
+
+.music-list .song{display:flex;justify-content:space-between;align-items:center;padding:10px;border-radius:10px;margin:8px 0;border:1px solid rgba(255,122,162,0.06)}
+.play-btn{background:transparent;border:1px solid rgba(90,0,51,0.08);color:var(--text);padding:6px 10px;border-radius:8px}
+
+
+textarea{width:100%;border-radius:10px;padding:10px;border:1px solid rgba(90,0,51,0.06);resize:vertical}
+.notes-actions{display:flex;gap:8px;margin-top:8px}
+#savedNotes{list-style:none;padding-left:0}
+#savedNotes li{background:#fff;padding:8px;border-radius:8px;margin-top:8px;border:1px solid rgba(255,122,162,0.06)}
+
+
+.gallery-area input{margin-top:8px}
+.thumb-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-top:12px}
+.thumb-grid img{width:100%;height:100%;object-fit:cover;border-radius:10px;border:1px solid rgba(255,122,162,0.06)}
+
+
+footer{margin-top:18px;color:#7a2f58;text-align:center}
+
+
+@media(max-width:640px){header h1{font-size:20px}}
